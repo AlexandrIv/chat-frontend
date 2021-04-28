@@ -1,0 +1,97 @@
+.chat {
+  height: 100%;
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.04204);
+  &__sidebar {
+    width: 320px;
+    border-right: 1px solid #F7F7F7;
+    &-header {
+      height: 60px;
+      padding: 0 17px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #F7F7F7;
+      & > div {
+        span {
+          display: inline-block;
+          margin-right: 5px;
+          color: #747474;
+        }
+      }
+      .ant-btn {
+        &:hover {
+          svg {
+            color: #2C2C2C;
+            transition: 0.3s ease-in-out;
+          }
+        }
+        svg {
+          color: #B4B4B4;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+    &-dialogs {
+      height: calc(100% - 80px);
+      .sidebar-dialogs {
+        height: 100%;
+      }
+    }
+  }
+  &__dialog {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    .ant-empty {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 0 25px;
+      border-bottom: 1px solid #F7F7F7;
+      &-center {
+        text-align: center;
+      }
+      &-username {
+        display: block;
+        color: #202020;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 5px;
+      }
+      .ant-btn {
+        &:hover {
+          svg {
+            color: #2C2C2C;
+            transition: 0.3s ease-in-out;
+          }
+        }
+        svg {
+          color: #B4B4B4;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+    //&-messages {
+    //  height: calc(100% - 259px);
+    //}
+    &-input {
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

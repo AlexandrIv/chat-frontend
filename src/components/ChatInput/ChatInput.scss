@@ -1,0 +1,62 @@
+.chat-input {
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.04204);
+  &__text-area {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .DraftEditor-root {
+    width: 100%;
+    line-height: 35px;
+    padding-left: 45px;
+    padding-right: 110px;
+    border: 1px solid #E9E9E9;
+    color: #8B8B8B;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #E9E9E9;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #D3D3D3;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  [contenteditable][placeholder]:empty:before {
+    content: attr(placeholder);
+    position: absolute;
+    color: gray;
+    background-color: transparent;
+  }
+
+  //textarea.ant-input {
+  //  height: 45px;
+  //  line-height: 35px;
+  //  padding-left: 45px;
+  //  padding-right: 110px;
+  //  color: #8B8B8B;
+  //  resize: none;
+  //  &::-webkit-scrollbar {
+  //    width: 4px;
+  //  }
+  //  &::-webkit-scrollbar-track {
+  //    background: transparent;
+  //  }
+  //  &::-webkit-scrollbar-thumb {
+  //    background: #E9E9E9;
+  //  }
+  //  &::-webkit-scrollbar-thumb:hover {
+  //    background: #D3D3D3;
+  //  }
+  //  &:focus {
+  //    box-shadow: none;
+  //  }
+  //}
+}

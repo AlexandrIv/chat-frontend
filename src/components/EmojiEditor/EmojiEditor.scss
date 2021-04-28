@@ -1,0 +1,82 @@
+.emoji-editor {
+  display: flex;
+  align-items: center;
+  &__smile-btn, &__actions {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    .ant-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: auto;
+      cursor: pointer;
+      &:hover {
+        svg {
+          color: #2C2C2C;
+          transition: 0.15s ease-in-out;
+        }
+      }
+    }
+  }
+  &__smile-btn {
+    left: 8px;
+  }
+  &__emoji-picker {
+    z-index: 1;
+    position: absolute;
+    bottom: 53px;
+    left: -14px;
+  }
+  &__actions {
+    right: 8px;
+    .ant-btn {
+      .upload-btn {
+        display: flex;
+        height: 18px;
+      }
+    }
+  }
+  .pell {
+    width: 100%;
+    .pell-actionbar {
+      display: none;
+    }
+    .pell-content {
+      width: 100%;
+      height: 35px;
+      padding-left: 45px;
+      padding-right: 110px;
+      color: #8B8B8B;
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #E9E9E9;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #D3D3D3;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .ant-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .anticon {
+    svg {
+      font-size: 18px;
+      color: #B4B4B4;
+      transition: 0.15s ease-in-out;
+    }
+  }
+}

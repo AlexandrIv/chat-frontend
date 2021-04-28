@@ -1,0 +1,30 @@
+@import "~styles/variables";
+
+.sidebar-dialogs {
+  .search {
+    padding: 0 20px 20px 20px;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.04204);
+    .ant-input {
+      height: 38px;
+      padding: 4px 11px 6px;
+      background-color: #F7F8F9;
+      border: 0;
+    }
+  }
+  .dialogs {
+    height: calc(100% - 58px);
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #EEEEEE;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #D3D3D3;
+    }
+  }
+}
